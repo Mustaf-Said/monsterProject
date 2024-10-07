@@ -53,6 +53,7 @@ nav {
   padding: 0.13rem 0;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   img {
     width: 55px;
     border-radius: 17px;
@@ -83,7 +84,7 @@ button:active {
 main {
   border-right: 5px solid rgb(236, 237, 232);
   grid-area: main;
-  height: 60vh;
+  height: auto;
   display: flex;
   align-items: start;
   flex-direction: column;
@@ -130,7 +131,7 @@ aside {
     margin: 0;
     list-style: none;
     text-align: center;
-    height: 60vh;
+    height: 100%;
   }
 }
 footer {
@@ -188,4 +189,45 @@ aside img {
   position: absolute;
   width: 100%;
   height: 65vh;
+}
+@media screen and (max-width: 500px) {
+  .container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas:
+      "header"
+      "nav"
+      "main"
+      "aside"
+      "footer";
+    height: auto;
+    min-width: 225px;
+    min-height: 225px;
+  }
+  header {
+    height: auto;
+  }
+  main {
+    border-right: none;
+    border-bottom: 1.5px solid rgb(165, 165, 165);
+    height: auto;
+  }
+  nav {
+    border-bottom: 1.5px solid rgb(165, 165, 165);
+    div {
+      width: auto;
+    }
+    a {
+      display: none;
+    }
+  }
+  aside img {
+    width: 100%;
+    height: 100%;
+  }
+  footer {
+    div {
+      width: auto;
+    }
+  }
 }
