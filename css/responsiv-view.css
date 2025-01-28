@@ -1,0 +1,116 @@
+/* Anpassa för skärmar mindre än 768px (mobiler och små surfplattor) */
+@media (max-width: 768px) {
+  body {
+    background-size: cover;
+    font-size: 1.6rem;
+    text-align: center;
+    justify-content: center;
+   }
+  header {
+    font-size: 2rem;
+    margin-right: 0;
+    margin-top: 70px;
+  }
+
+  .rubrik2 {
+    font-size: 2.4rem;
+    margin: 10px auto;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 80px;
+  }
+
+  /* Anpassa sektionerna för mobiler */
+  .monster-form-section,
+  .monster-list-section,
+  .container,
+  .monster-box {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 30px;
+    font-size: 0.8rem;
+    text-align: left;
+  }
+
+  /* Grid layout för monster boxen */
+  .monster-box {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    max-height: 300px;
+    overflow-y: auto;
+    border-radius: 8px;
+      }
+
+  .monster-box:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    /* Ändrar bara bakgrundsfärg vid hover för mobiler */
+  }
+
+  /* Dölj allt utom den namn */
+  .monster-box p:not(:first-of-type) {
+    display: none;
+  }
+
+  /* Om du har en all-monsters klass */
+  .all-monsters {
+    display: grid;
+    width: 80%;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    margin-bottom: 0px;
+  }
+
+  .footer {
+    height: auto;
+    position: relative;
+    margin-bottom: 0px;
+  }
+
+  .logo img {
+    display: none;
+  }
+
+  .monster_pic {
+    display: none;
+  }
+
+  .monster-summary {
+    margin: 0;
+    height: 10px;
+  }
+
+  .content {
+    height: 80px;
+  }
+        .filter-section {
+          margin-left: 0 ;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+  
+        .filter-section button,
+        .filter-section select {
+          width: 100%;
+          max-width: 150px;
+        }
+    
+        .filter-section button {
+          font-size: 0.7rem;
+          padding: 2px;
+          margin-left: 0px;
+        }
+    
+        .filter-section select {
+          font-size: 0.8rem;
+        }
+        
+}

@@ -1,0 +1,331 @@
+/* css/body.css */
+/*Global rules*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*Html rules*/
+html {
+  padding: 0;
+  margin: auto;
+  scroll-behavior: smooth;
+}
+/* h2*/
+h2 {
+  font-weight: bolder;
+  font-size: 2rem; /* Sammanfogat till en rad */
+  color: #9cf6f6;
+}
+/*Body rules*/
+body {
+  background-image: url("/img/monsterfluffy.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  backdrop-filter: blur(10px); /* Anpassa blur på bilden */
+  font-family: sans-serif;
+}
+/*Logo and header*/
+.logo {
+  display: flex;
+  margin-left: 120px;
+  margin-top: -10px;
+}
+
+.logo img {
+  width: 200px;
+  height: 200px;
+}
+
+header {
+  text-align: center;
+  font-family: "Creepster", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.6rem;
+  color: #c9f778;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: -120px;
+  margin-right: 510px;
+}
+/* Andra rubriken*/
+.rubrik2 {
+  display: flex;
+  justify-content: center;
+  font-size: 3.8rem;
+  font-family: "Creepster", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: #c9f778;
+  margin-top: -80px;
+  margin-left: 485px;
+}
+/*Main section*/
+.allButtun{
+  margin-left: 6rem;
+ }
+
+main {
+  display: flex;
+  justify-content: center;
+  margin-right: auto;
+  margin-top: 80px;
+}
+
+/* Bygg Monster Sektion */
+.monster-form-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  height: 400px;
+  width: 300px;
+  background-color: #adbcff;
+  border-radius: 10px;
+  border: 4px solid #9cf6f6;
+  box-shadow: 0 0 0 3px #c9f778, 0 0 10px rgba(0, 0, 0, 0.2);
+  gap: 10px;
+}
+/*Monster form sektion */
+#monsterForm {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: auto;
+  h2{
+    text-align: center;
+    
+  }
+
+legend {
+  color: #c9f778;
+  text-align: center;
+  font-family: "Nosifer", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 400;
+  font-style: normal;
+}
+
+fieldset {
+  border: 2px solid #c9f778;
+  border-radius: 5px;
+  padding: 2px;
+}
+
+label {
+  color: #9cf6f6;
+  font-weight: bolder;
+  font-size: 0.7rem;
+  display: inline-block;
+  width: auto;
+}
+input, select{
+  font-size: 0.7rem;
+  border: 1px solid #c9f778;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  color: #333;
+  width: 100%;
+  height: 20px;
+}
+
+}
+
+button {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 1px;
+  padding-right: 1px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 0.7rem;
+  font-family: "Nosifer", sans-serif;
+  font-weight: 400;
+  background-color: #c9f778;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #b4e255;
+}
+
+#monster-header{
+  font-family: "creepster", system-ui;
+  font-size: 2.2rem;
+}
+
+/* Resultat Sektion */
+.monster-list-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  height: 400px; 
+  width: 300px;  
+  background-color: #adbcff; 
+  border-radius: 10px;
+  border: 4px solid #9cf6f6;
+  box-shadow: 0 0 0 3px #c9f778, 0 0 10px rgba(0, 0, 0, 0.2);
+  gap: 10px; 
+}
+
+.monster-container{
+  max-width: 300px;
+  padding: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  height: 400px;
+  width: 300px;
+  background-color: #adbcff;
+  border-radius: 10px;
+  border: 4px solid #9cf6f6;
+  box-shadow: 0 0 0 3px #c9f778, 0 0 10px rgba(0, 0, 0, 0.2);
+  gap: 10px;
+}
+
+.container h2 {
+  color: #c9f778;
+}
+
+.monster-box {
+  border: 4px solid #9cf6f6;
+  box-shadow: 0 0 0 3px #c9f778, 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 100px); /* 2 kolumner */
+  grid-gap: 7px;
+  width:auto; /* Full bredd på förälderelementet */
+}
+
+.monster-box p {
+  color: #39a661;
+  font-weight: bolder;
+  word-break: break-all;
+}
+
+.monster-box .delete-btn {
+  background-color: #adbcff;
+  border: none;
+  border-radius: 5px;
+  font-family: "Nosifer", sans-serif;
+  font-size: 1rem;
+}
+
+.monster-box .edit-btn {
+  background-color: #b4e255;
+  border: none;
+  border-radius: 5px;
+  font-family: "Nosifer", sans-serif;
+  font-size: 1rem;
+}
+
+.monster-summary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  margin-left: 330px;
+}
+
+.monster-summary button {
+  margin-top: 5px;
+    padding: 10px;
+    font-size: 2rem;
+    font-family: "Nosifer", sans-serif;
+    font-weight: 400;
+    background-color: #c9f778;
+    color: #333;
+    border: 2px solid #9cf6f6;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    justify-content: center;
+}
+
+.monster-summary button:hover {
+  background-color: #b4e255;
+}
+/* Number of monsters */
+#number-of-monsters {
+  font-size: 0.7rem;
+  font-family: "Nosifer", sans-serif;
+  font-weight: 400;
+  color: #c9f778;
+}
+#match-count {
+  font-size: 1.2rem;
+  font-family: "Nosifer", sans-serif;
+  font-weight: 400;
+  color: #c9f778;
+  text-align: center;
+
+}
+.filter-section {
+  margin-left: 200px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 10px;
+
+  button {
+    border: 2px solid #9cf6f6;
+    font-size: 0.6rem;
+    width: 140px;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 0px;
+  }
+}
+
+.filter-section select{
+  padding: 5px;
+  border-radius: 5px;
+  border: 2px solid #9cf6f6;
+  background-color: #adbcff;
+  color: #c9f778;
+  font-family: "Nosifer", sans-serif;
+  font-size: 0.7rem;
+  width: 140px;
+  height: 40px;
+}
+
+div#countDisplay {
+  color: #000000;
+  padding: 2px;
+  border-radius: 5px;
+  border: 2px solid #9cf6f6;
+  background-color:#c9f778;
+  font-family: "Nosifer", sans-serif;
+  font-size: 0.5rem;
+  width: 150px;
+  height: 40px;
+}
+
+.no-monsters {
+  padding: 5px;
+  border-radius: 5px;
+  border: 3px solid #9cf6f6;
+  font-weight: bolder;
+  font-size: 2rem; /* Sammanfogat till en rad */
+  color: #9cf6f6;
+  font-family: "Nosifer", sans-serif;
+}

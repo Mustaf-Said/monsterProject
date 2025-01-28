@@ -1,0 +1,38 @@
+/* Footer */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; 
+    justify-content: flex-end; 
+    position: relative; 
+    height: 50vh; 
+}
+
+.monster_pic {
+    display: flex;
+    justify-content: flex-end; 
+    flex-grow: 1;
+    margin-top: 99px; 
+}
+
+.monster_pic img {
+    max-width: auto; 
+    height: 400px; 
+   }
+
+.footer {
+    width: 100%; 
+    background-color: #adbcff; 
+    text-align: center; 
+    position: relative; 
+    z-index: 2; 
+    margin-top: -50px; 
+    padding: 20px; 
+    height: 50px;
+}
+
+.github-icon {
+    width: 30px; 
+    height: auto; 
+    margin-top: -10px;
+}
